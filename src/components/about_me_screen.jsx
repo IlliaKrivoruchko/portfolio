@@ -94,7 +94,7 @@ export default function About() {
                 border: "1px solid rgba(255,255,255,0.75)",
                 boxShadow: "0 20px 60px rgba(0,0,0,0.1)",
               }}>
-              <img src="public\Illia.webp" alt="Illia photo" className="w-full h-full object-cover" /> 
+              <img src="/Illia.webp" alt="Illia photo" className="w-full h-full object-cover" /> 
             </div>
           </div>
 
