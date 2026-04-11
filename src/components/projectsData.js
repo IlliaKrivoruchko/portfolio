@@ -1,0 +1,88 @@
+export const projects = [
+  {
+    id: "skil2",
+    number: "01",
+    year: "2026",
+    title: "SKIL 2",
+    subtitle: "Fitness Platform — Laravel",
+    context: "Client Project · 2nd Semester · Thomas More",
+    type: "Group Project",
+    status: "In Progress",
+    description:
+      "A real-world client project built in a Scrum environment. Our team developed a Laravel-based fitness platform based on requirements provided by another team. The platform manages trainers, users, training schemas, lessons and reservations.",
+    myRole:
+      "Within the team I owned the full admin panel and user-facing features. I implemented login & registration, admin user CRUD, lesson reservations, training schema management and a real-time chat between users and trainers.",
+    branches: [
+      { name: "ik_register", desc: "User registration flow" },
+      { name: "ik_login", desc: "Authentication system" },
+      { name: "ik_lessons_reservation", desc: "Lesson booking for users" },
+      { name: "ik_admin_users", desc: "Admin user list & overview" },
+      { name: "ik_user_admin_details", desc: "Detailed user management view" },
+      { name: "ik_admin_user_crud", desc: "Full CRUD operations for admin" },
+      { name: "ik_delete_training_schema", desc: "Schema deletion logic" },
+      { name: "ik_schema_bewerken", desc: "Edit training schemas" },
+      { name: "ik_write_reaction_to_exercise", desc: "Trainer–user chat / reactions" },
+    ],
+    hardSkills: ["Laravel", "PHP", "MySQL", "Blade Templates", "Scrum / Agile", "Git & Branching"],
+    softSkills: ["Team collaboration", "Task ownership", "Client-oriented thinking", "Iterative delivery"],
+    links: [],
+    visuals: [], // add screenshot paths here e.g. ["/screenshots/skil2-admin.png"]
+  },
+  {
+    id: "ecorise",
+    number: "02",
+    year: "2025",
+    title: "EcoRise",
+    subtitle: "Browser Strategy Game",
+    context: "Game Jam · Side Project",
+    type: "Group Project",
+    status: "Completed",
+    description:
+      "A browser-based strategy game built during a 2–3 day game jam. Players must balance city expansion and resource generation while keeping their carbon footprint below a critical limit. The game explores the tension between economic growth and environmental responsibility.",
+    myRole:
+      "Contributed to game mechanics design and front-end implementation. Built core gameplay logic in vanilla JavaScript including the resource/carbon balance system.",
+    branches: [],
+    hardSkills: ["JavaScript", "HTML", "CSS", "Game Logic", "Vanilla JS DOM manipulation"],
+    softSkills: ["Creative problem solving", "Fast delivery under pressure", "Team coordination"],
+    links: [{ label: "Play EcoRise →", url: "https://ecorisegame.netlify.app/" }],
+    visuals: [],
+  },
+  {
+    id: "skil1",
+    number: "03",
+    year: "2025",
+    title: "SKIL 1",
+    subtitle: "Software Modeling & Design",
+    context: "Thomas More · Second Year · 1st Semester",
+    type: "Group Project",
+    status: "Completed",
+    description:
+      "An academic project for the Software Modeling and Design (SMD) course. The goal was to analyze a software system, define its core components, and produce structured design documentation before any code is written.",
+    myRole:
+      "Worked as part of a group to produce use case diagrams, define system requirements, and design the database model. Contributed to translating user needs into structured system models.",
+    branches: [],
+    hardSkills: ["UML / Use Case Diagrams", "Database Modeling", "Requirements Analysis", "System Design"],
+    softSkills: ["Structured thinking", "Documentation", "Teamwork"],
+    links: [],
+    visuals: [],
+  },
+  {
+    id: "portfolio",
+    number: "04",
+    year: "2025",
+    title: "Portfolio",
+    subtitle: "Personal Web Portfolio",
+    context: "Self-driven Project",
+    type: "Solo Project",
+    status: "In Progress",
+    description:
+      "This portfolio — designed and built entirely from scratch. The goal was to create a modern, glassmorphism-styled personal site that showcases my work, story and skills in a visually distinctive way.",
+    myRole:
+      "Everything — design decisions, component architecture, responsive layout, animations and deployment.",
+    branches: [],
+    hardSkills: ["React", "Tailwind CSS", "Vite", "React Router", "Component Architecture"],
+    softSkills: ["Design thinking", "Attention to detail", "Self-direction"],
+    links: [],
+    visuals: [],
+  },
+];
