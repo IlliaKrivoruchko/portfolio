@@ -174,11 +174,13 @@ export default function ProjectDetail() {
         )}
 
         {/* ── VISUALS ── */}
-        {project.visuals.length === 0 && (
-          <div className="mb-16">
-            <p className="text-slate-400 text-sm md:text-base tracking-[0.3em] uppercase mb-6" style={dmSans}>
-              Visuals
-            </p>
+        {project.visuals !== null && (
+
+        <div className="mb-16">
+          <p className="text-slate-400 text-sm md:text-base tracking-[0.3em] uppercase mb-6" style={dmSans}>
+            Visuals
+          </p>
+          {project.visuals.length === 0 ? (
             <div
               className="w-full rounded-3xl flex items-center justify-center"
               style={{
@@ -188,12 +190,30 @@ export default function ProjectDetail() {
               }}
             >
               <p className="text-slate-300 text-sm md:text-base font-mono" style={dmSans}>
-                screenshots coming soon...
+                Add screenshots to projectsData.js → visuals[]
               </p>
             </div>
-          </div>
-        )}
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {project.visuals.map((src, i) => (
+                <div key={i} className="overflow-hidden rounded-3xl"
+                  style={{
+                    background: "rgba(255,255,255,0.38)",
+                    border: "1px solid rgba(255,255,255,0.65)",
+                    boxShadow: "0 8px 32px rgba(0,0,0,0.07)",
+                  }}>
+                  <img
+                    src={src}
+                    alt={`${project.title} screenshot ${i + 1}`}
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
 
+        )}
         {/* ── SKILLS ── */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 pt-16"
           style={{ borderTop: "1px solid rgba(0,0,0,0.06)" }}>
@@ -248,4 +268,4 @@ export default function ProjectDetail() {
       </div>
     </section>
   );
-}
+} 

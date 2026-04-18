@@ -26,7 +26,7 @@ export const projects = [
     hardSkills: ["Laravel", "PHP", "MySQL", "Blade Templates", "Scrum / Agile", "Git & Branching"],
     softSkills: ["Team collaboration", "Task ownership", "Client-oriented thinking", "Iterative delivery"],
     links: [],
-    visuals: [], // add screenshot paths here e.g. ["/screenshots/skil2-admin.png"]
+    visuals: ["/screenshots/admin_portel.png","/screenshots/trainer_portel.png"], 
   },
   {
     id: "ecorise",
@@ -45,7 +45,7 @@ export const projects = [
     hardSkills: ["JavaScript", "HTML", "CSS", "Game Logic", "Vanilla JS DOM manipulation"],
     softSkills: ["Creative problem solving", "Fast delivery under pressure", "Team coordination"],
     links: [{ label: "Play EcoRise →", url: "https://ecorisegame.netlify.app/" }],
-    visuals: [],
+    visuals: ["/screenshots/ecorise_map.png","/screenshots/ecorise_menu.png"],
   },
   {
     id: "skil1",
@@ -64,7 +64,7 @@ export const projects = [
     hardSkills: ["UML / Use Case Diagrams", "Database Modeling", "Requirements Analysis", "System Design"],
     softSkills: ["Structured thinking", "Documentation", "Teamwork"],
     links: [],
-    visuals: [],
+    visuals: ["/screenshots/use_case.png","/screenshots/ERD.png"],
   },
   {
     id: "portfolio",
@@ -83,6 +83,6 @@ export const projects = [
     hardSkills: ["React", "Tailwind CSS", "Vite", "React Router", "Component Architecture"],
     softSkills: ["Design thinking", "Attention to detail", "Self-direction"],
     links: [],
-    visuals: [],
+    visuals: null,
   },
 ];
