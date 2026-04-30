@@ -25,7 +25,7 @@ export const projects = [
     ],
     hardSkills: ["Laravel", "PHP", "MySQL", "Blade Templates", "Scrum / Agile", "Git & Branching"],
     softSkills: ["Team collaboration", "Task ownership", "Client-oriented thinking", "Iterative delivery"],
-    links: [],
+    links: [{"label": "View SKIL 2 →", "url": "https://poutrel.quintedev.be/"}],
     visuals: ["/screenshots/admin_portel.png","/screenshots/trainer_portel.png"], 
   },
   {
@@ -48,8 +48,27 @@ export const projects = [
     visuals: ["/screenshots/ecorise_map.png","/screenshots/ecorise_menu.png"],
   },
   {
+  id: "car-breakdown",
+  number: "03",
+  year: "2026",
+  title: "Car Breakdown ML",
+  subtitle: "Machine Learning · Kaggle Competition",
+  context: "Thomas More · Applied ML Course",
+  type: "Group Project",
+  status: "Completed",
+  description:
+    "A machine learning project built for an internal Kaggle competition. The goal was to predict whether a vehicle would break down within the next 30 days based on 13 features including mileage, oil quality, engine hours and weather exposure. The dataset contained 1050 training samples with significant missing values (~23%) requiring careful preprocessing.",
+  myRole:
+    "Contributed to data preprocessing strategy, model selection and evaluation. The team made a key decision to use One-Hot Encoding over LabelEncoder to avoid false ordinal weights, and built a dual Random Forest pipeline comparing Gini vs Entropy criteria. We also engineered a manual undersampling solution to address the class imbalance / Accuracy Paradox — prioritising recall over raw accuracy for real-world relevance.",
+  branches: [],
+  hardSkills: ["Python", "scikit-learn", "Random Forest", "Pandas", "Data Cleaning", "One-Hot Encoding", "Kaggle"],
+  softSkills: ["Analytical thinking", "Team decision-making", "Business reasoning", "Problem framing"],
+  links: [],
+  visuals: ["/screenshots/ai_matrix.png","/screenshots/graphic.png"],
+},
+  {
     id: "skil1",
-    number: "03",
+    number: "04",
     year: "2025",
     title: "SKIL 1",
     subtitle: "Software Modeling & Design",
@@ -68,8 +87,8 @@ export const projects = [
   },
   {
     id: "portfolio",
-    number: "04",
-    year: "2025",
+    number: "05",
+    year: "2026",
     title: "Portfolio",
     subtitle: "Personal Web Portfolio",
     context: "Self-driven Project",
@@ -85,4 +104,5 @@ export const projects = [
     links: [],
     visuals: null,
   },
+  
 ];
