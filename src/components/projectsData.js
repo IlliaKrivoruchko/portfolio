@@ -104,5 +104,24 @@ export const projects = [
     links: [],
     visuals: null,
   },
+  {
+    id: "nxtera-solution",
+    number: "06",
+    year: "2026",
+    title: "Nxtera Solution",
+    subtitle: "Laravel E-commerce Platform",
+    context: "Client-style Project · Laravel / Livewire",
+    type: "Solo Project",
+    status: "In Progress",
+    description:
+      "A Laravel-based e-commerce platform for a product catalog and ordering workflow. The application includes localized storefront pages, product categories, sale products, product detail pages, cart and checkout flow, Mollie payments, customer order status pages, and SEO-focused public content.",
+    myRole:
+      "Built the application structure, storefront, admin area and commerce features. I implemented product and category management, stock tracking, order administration, exports, payment flow, localized content pages, blog management, cookie/privacy pages and automated inventory reporting.",
+    branches: [],
+    hardSkills: ["Laravel", "Livewire", "Flux UI", "PHP", "MySQL", "Tailwind CSS", "Mollie Payments"],
+    softSkills: ["Full-stack ownership", "Business logic design", "Attention to detail", "Problem solving"],
+    links: [],
+    visuals: null,
+  },
   
 ];
